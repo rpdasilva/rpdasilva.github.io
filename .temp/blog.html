@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css" />
+  <link rel="stylesheet" href="http://unpkg.com/tachyons-svg@1.0.1/css/tachyons-svg.min.css" />
+  <style>
+    /*
+      primary: #A4D252
+      secondary: #6A8EAE
+      tertiary: #9BD1E5
+      black: #555
+    */
+
+    @font-face {
+      font-family: 'Ethos';
+      src: url('fonts/ETHOS-REGULAR.OTF');
+    }
+
+    html {
+      font-family: 'Ethos';
+      font-variant-ligatures: none;
+      font-feature-settings: 'liga' 0;
+    }
+
+    a {
+      color: #A4D252;
+      text-decoration: none;
+    }
+
+    .rpd-h025 {
+      height: 0.25rem;
+    }
+
+    .rpd-inherit {
+      color: inherit;
+    }
+
+    .bg-primary {
+      background-color: #A4D252;
+    }
+
+    .bg-secondary {
+      background-color: #6A8EAE;
+    }
+
+    .bg-tertiary {
+      background-color: #9BD1E5;
+    }
+
+    .post, .search {
+      max-width: 38rem;
+    }
+  </style>
+</head>
+
+<body>
+  <svg class="dn">
+    <defs>
+      <g id="logo">
+        <circle fill="#555555" cx="64" cy="64" r="64" />
+        <path fill="#FFFFFF" d="M39.438,96.47H25.075V64.518c0-5.862,1.536-10.637,4.608-14.324c1.767-2.125,4.013-3.814,6.74-5.069
+        c2.727-1.254,5.523-1.882,8.391-1.882c5.709,0,10.522,1.92,14.44,5.761c3.917,3.84,5.877,8.551,5.877,14.132
+        c0,5.428-1.947,10.114-5.839,14.056s-8.5,5.914-13.825,5.914c-0.871,0-2.15-0.09-3.84-0.269V67.015
+        c1.177,0.947,2.355,1.421,3.533,1.421c1.484,0,2.758-0.551,3.821-1.651c1.062-1.101,1.594-2.406,1.594-3.917
+        c0-1.51-0.551-2.797-1.651-3.86c-1.101-1.062-2.419-1.594-3.956-1.594c-3.687,0-5.53,2.548-5.53,7.643V96.47z" />
+        <path fill="#FFFFFF" d="M87.143,29.878h14.363v31.914c0,5.863-1.537,10.637-4.609,14.325c-1.766,2.125-4.014,3.814-6.74,5.069
+        c-2.727,1.254-5.523,1.882-8.391,1.882c-5.709,0-10.521-1.921-14.439-5.761c-3.917-3.841-5.876-8.551-5.876-14.133
+        c0-5.402,1.945-10.074,5.837-14.017c3.893-3.942,8.5-5.915,13.826-5.915c0.844,0,2.125,0.077,3.84,0.23v15.822
+        c-1.178-0.921-2.355-1.382-3.533-1.382c-1.484,0-2.76,0.544-3.82,1.632c-1.062,1.088-1.594,2.4-1.594,3.936
+        c0,1.485,0.549,2.759,1.65,3.821c1.102,1.063,2.42,1.594,3.955,1.594c3.688,0,5.531-2.547,5.531-7.642V29.878z" />
+      </g>
+    </defs>
+  </svg>
+
+  <header>
+    <div class="flex rpd-h025">
+      <div style="width: 49.5%;" class="flex-auto bg-primary"></div>
+      <div style="width: 33%;" class="flex-auto bg-secondary"></div>
+      <div style="width: 16.5%;" class="flex-auto bg-tertiary"></div>
+    </div>
+
+    <div class="relative pv2">
+      <div class="relative flex items-center justify-between ph3">
+        <div>
+          <svg class="h3" viewBox="0 0 128 128">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </div>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Twitter</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="ph4">
+    <form class="post center mv3">
+      <input class="db w-100 pa2" type="search" placeholder="Search...">
+    </form>
+    <section class="post center pv4 lh-copy bn">
+      <header>
+        <h1 class="mt0"><a href="#">A deep dive on Angular decorators</a></h1>
+        <span>Jan 01, 2017</span>
+      </header>
+      <p>
+        <a href="#" class="rpd-inherit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus varius maximus. Donec id lectus ante. Sed sit amet vulputate massa, ut fermentum porta lacus...</a>
+      </p>
+      <div class="mt4 flex content-center justify-around">
+        <a href="#" class="w-100 mw5 pv3 ph4 br-pill tc white bg-mid-gray dim">Read more</a>
+      </div>
+    </section>
+    <section class="post center pv4 lh-copy bt bw1 b--mid-gray">
+      <header>
+        <h1 class="mt0"><a href="#">A deep dive on Angular decorators</a></h1>
+        <span>Jan 01, 2017</span>
+      </header>
+      <p>
+        <a href="#" class="rpd-inherit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus varius maximus. Donec id lectus ante. Sed sit amet vulputate massa, ut fermentum porta lacus...</a>
+      </p>
+      <div class="mt4 flex content-center justify-around">
+        <a href="#" class="w-100 mw5 pv3 ph4 br-pill tc white bg-mid-gray dim">Read more</a>
+      </div>
+    </section>
+    <section class="post center pv4 lh-copy bt bw1 b--mid-gray">
+      <header>
+        <h1 class="mt0"><a href="#">A deep dive on Angular decorators</a></h1>
+        <span>Jan 01, 2017</span>
+      </header>
+      <p>
+        <a href="#" class="rpd-inherit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus varius maximus. Donec id lectus ante. Sed sit amet vulputate massa, ut fermentum porta lacus...</a>
+      </p>
+      <div class="mt4 flex content-center justify-around">
+        <a href="#" class="w-100 mw5 pv3 ph4 br-pill tc white bg-mid-gray dim">Read more</a>
+      </div>
+    </section>
+  </main>
+  <footer class="h5 pa4 white bg-mid-gray"></footer>
+</body>
+</html>
